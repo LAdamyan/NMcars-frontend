@@ -1,41 +1,105 @@
+/* Global layout */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f0f2f5;
-    color: #333;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
 }
 
-.header {
+/* Hero header */
+.hero {
+    position: relative;
+    height: 55vh;
+    background: url('/src/assets/cars.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(2px);
+}
+
+.hero-content {
+    position: relative;
     text-align: center;
-    padding: 20px;
-    background: #1e90ff;
     color: white;
 }
 
-.services, .our-works, .location, .working-hours {
-    margin: 20px auto;
-    padding: 15px;
-    max-width: 900px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.hero-content h1 {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #d4af37; /* Premium gold */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    color: #d4af37;
+    margin-top: 40px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Luxury Cards */
+.services,
+.our-works,
+.location,
+.working-hours {
+    background: #1a1a1a;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+    border: 1px solid #333;
 }
 
 .service-card {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    transition: transform 0.2s ease;
 }
 
+.service-card:hover {
+    transform: translateX(5px);
+    border-color: #d4af37;
+}
+
+.service-card h3 {
+    margin: 0;
+    color: #d4af37;
+}
+
+/* Images */
 .garage-image {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
-footer {
+/* Footer */
+.footer {
+    margin-top: 40px;
     text-align: center;
-    padding: 20px;
-    background: #1e90ff;
-    color: white;
-    margin-top: 20px;
+    padding: 25px;
+    background: #111;
+    color: #e6e6e6;
+    border-top: 1px solid #333;
+}
+
+.footer p {
+    margin: 5px;
 }
