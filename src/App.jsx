@@ -8,7 +8,7 @@ export default function App() {
     return (
         <div className="app">
             <header className="header">
-                <h1>NM_cars</h1>
+                <h1>NM Cars</h1>
                 <p>Your trusted car service garage in the Netherlands!</p>
             </header>
 

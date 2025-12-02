@@ -4,10 +4,10 @@ export default function ServiceList() {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8080/services") // your backend endpoint
+        fetch("https://nmcars-backend.onrender.com/api/services")
             .then((res) => res.json())
             .then((data) => setServices(data))
-            .catch((err) => console.error(err));
+            .catch((err) => console.error("Failed to fetch services:", err));
     }, []);
 
     return (
