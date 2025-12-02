@@ -7,36 +7,40 @@ import WorkingHours from "./components/WorkingHours";
 export default function App() {
     return (
         <div className="app">
-            <header className="header">
-                <h1>NM_cars</h1>
-                <p>Your trusted car service garage in the Netherlands!</p>
+            <header className="hero">
+                <div className="overlay"></div>
+                <div className="hero-content">
+                    <h1>NM Cars</h1>
+                    <p>Premium Automotive Service in the Netherlands</p>
+                </div>
             </header>
 
-            <main>
+            <main className="content">
                 <section>
-                    <h2>Our Services</h2>
+                    <h2 className="section-title">Our Services</h2>
                     <ServiceList />
                 </section>
 
                 <section>
-                    <h2>Our Works</h2>
+                    <h2 className="section-title">Our Works</h2>
                     <OurWorks />
                 </section>
 
                 <section>
-                    <h2>Location</h2>
+                    <h2 className="section-title">Location</h2>
                     <Location />
                 </section>
 
                 <section>
-                    <h2>Working Hours</h2>
+                    <h2 className="section-title">Working Hours</h2>
                     <WorkingHours />
                 </section>
             </main>
 
-            <footer>
-                <p>Phone: +31 6 12 34 56 78</p>
-                <p>Address: Main Street 12, Amsterdam</p>
+            <footer className="footer">
+                <p>📞 +31 6 12 34 56 78</p>
+                <p>📍 Main Street 12, Amsterdam</p>
+                <p>© 2025 NM Cars</p>
             </footer>
         </div>
     );
