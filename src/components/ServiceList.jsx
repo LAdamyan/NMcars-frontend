@@ -2,16 +2,39 @@ import React, { useEffect, useState } from "react";
 
 export default function ServiceList() {
     const [services, setServices] = useState([]);
+    const [query, setQuery] = useState(""); // optional: for search input
+
+    // Use your deployed backend URL
+    const BACKEND_URL = "https://nmcars-backend.onrender.com/api";
 
     useEffect(() => {
-        fetch("https://nmcars-backend.onrender.com/api/services")
-            .then((res) => res.json())
+        // Build the URL dynamically depending on query
+        const url = query
+            ? `${BACKEND_URL}/search?q=${encodeURIComponent(query)}`
+            : `${BACKEND_URL}/services`;
+
+        fetch(url)
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! status: ${res.status}`);
+                }
+                return res.json();
+            })
             .then((data) => setServices(data))
             .catch((err) => console.error("Failed to fetch services:", err));
-    }, []);
+    }, [query]); // re-run effect when query changes
 
     return (
         <div className="services">
+            {/* Optional search input */}
+            <input
+                type="text"
+                placeholder="Search by address..."
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                style={{ marginBottom: "20px", padding: "5px", width: "100%" }}
+            />
+
             {services.length === 0 ? (
                 <p>Loading services...</p>
             ) : (
