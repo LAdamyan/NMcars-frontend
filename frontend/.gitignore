@@ -1,6 +1,16 @@
+<<<<<<< HEAD
+/backend/target/
+/frontend/node_modules/
+/frontend/dist/
+*.iml
+/.idea/
+/.vscode/
+
+=======
 target/
 *.log
 *.class
 *.iml
 .idea/
 .DS_Store
+>>>>>>> f0ef9d21c69b59c568066ff69237077420316d25
