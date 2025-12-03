@@ -4,15 +4,13 @@ import OurWorks from "./components/OurWorks";
 import Location from "./components/Location";
 import WorkingHours from "./components/WorkingHours";
 
+
 export default function App() {
     return (
         <div className="app">
             <header className="hero">
                 <div className="overlay"></div>
-                <div className="hero-content">
-                    <h1>NM Cars</h1>
-                    <p>Premium Automotive Service in the Netherlands</p>
-                </div>
+
             </header>
 
             <main className="content">
@@ -38,8 +36,8 @@ export default function App() {
             </main>
 
             <footer className="footer">
-                <p>📞 +31 6 12 34 56 78</p>
-                <p>📍 Main Street 12, Amsterdam</p>
+                <p>📞 +31 6 19 90 52 83</p>
+                <p>📍 Industrieweg 4A 5281 RW Boxtel</p>
                 <p>© 2025 NM Cars</p>
             </footer>
         </div>
