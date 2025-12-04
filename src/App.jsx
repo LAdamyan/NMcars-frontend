@@ -37,7 +37,7 @@ export default function App() {
 
             <footer className="footer">
                 <p>📞 +31 6 19 90 52 83</p>
-                <p>📍 Industrieweg 4A 5281 RW Boxtel</p>
+                <p>📍 Industrieweg 4 5281 RW Boxtel</p>
                 <p>© 2025 NM Cars</p>
             </footer>
         </div>

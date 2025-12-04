@@ -16,8 +16,11 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        repository.save(new ServiceOffer("Oil change", "Full synthetic oil and filter", "Main Street 12, Amsterdam", 59.99));
-        repository.save(new ServiceOffer("Tire replacement", "Replace tires with new ones", "Main Street 12, Amsterdam", 89.99));
-        repository.save(new ServiceOffer("Car wash", "Complete exterior and interior wash", "Main Street 12, Amsterdam", 29.99));
+        repository.save(new ServiceOffer("Kleine onderhoudsbeurt", null,null,200-600));
+        repository.save(new ServiceOffer("Grote onderhoudsbeurt", null,null, 100-250));
+        repository.save(new ServiceOffer("Motor reparatie", null,null, 0));
+        repository.save(new ServiceOffer("Elektrische werkzaamheden", null,null, 0));
+        repository.save(new ServiceOffer("Distributierem vervangen ", null,null, 300-1000));
+        repository.save(new ServiceOffer("Distributieketting vervangen ", null,null, 700-2000));
     }
 }
