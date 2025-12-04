@@ -53,12 +53,12 @@ body {
 
 .service-card:hover {
     transform: translateX(5px);
-    border-color: #d4af37;
+    border-color: #364a5a;
 }
 
 .service-card h3 {
     margin: 0;
-    color: #d4af37;
+    color: #c5dee4;
 }
 
 /* Images */

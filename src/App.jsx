@@ -12,25 +12,24 @@ export default function App() {
                 <div className="overlay"></div>
 
             </header>
-
             <main className="content">
                 <section>
-                    <h2 className="section-title">Our Services</h2>
+                    <h2 className="section-title">Onze diensten</h2>
                     <ServiceList />
                 </section>
 
                 <section>
-                    <h2 className="section-title">Our Works</h2>
+                    <h2 className="section-title">Onze werken</h2>
                     <OurWorks />
                 </section>
 
                 <section>
-                    <h2 className="section-title">Location</h2>
+                    <h2 className="section-title">Locatie</h2>
                     <Location />
                 </section>
 
                 <section>
-                    <h2 className="section-title">Working Hours</h2>
+                    <h2 className="section-title">Werkuren</h2>
                     <WorkingHours />
                 </section>
             </main>
