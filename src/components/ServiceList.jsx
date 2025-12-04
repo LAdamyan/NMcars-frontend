@@ -3,12 +3,12 @@ import "./ServiceList.css"; // optional for custom styling
 
 export default function ServiceList() {
     const services = [
-        "kleine onderhoudsbeurt",
-        "grote onderhoudsbeurt",
-        "motor reparatie",
-        "elektrische werkzaamheden",
-        "distributierem vervangen ongeveer",
-        "distributieketting vervangen"
+        "Kleine onderhoudsbeurt",
+        "Grote onderhoudsbeurt",
+        "Motor reparatie",
+        "Elektrische werkzaamheden",
+        "Distributierem vervangen ongeveer",
+        "Distributieketting vervangen"
     ];
 
     return (
