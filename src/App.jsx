@@ -15,9 +15,10 @@ export default function App() {
 
     return (
         <div className="app">
-            <LanguageSwitcher /> {/* Top-right flags */}
-
             <header className="hero">
+                <div className="flags-container">
+                    <LanguageSwitcher />
+                </div>{/* Top-right flags */}
                 <div className="overlay"></div>
             </header>
 
