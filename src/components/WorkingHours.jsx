@@ -6,7 +6,7 @@ export default function WorkingHours() {
             <ul>
                 <li>Maandag - Vrijdag: 08:00 - 18:00</li>
                 <li>Zaterdag: 09:00 - 13:00</li>
-                <li>Zondag: Closed</li>
+                <li>Zondag: Gesloten</li>
             </ul>
         </div>
     );
