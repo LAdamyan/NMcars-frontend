@@ -1,12 +1,14 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 export default function WorkingHours() {
+    const { t } = useTranslation();
     return (
         <div className="working-hours">
             <ul>
-                <li>Maandag - Vrijdag: 08:00 - 18:00</li>
-                <li>Zaterdag: 09:00 - 13:00</li>
-                <li>Zondag: Gesloten</li>
+                <p>{t('hoursWeekdays')}</p>
+                <p>{t('hoursSaturday')}</p>
+                <p>{t('hoursSunday')}</p>
             </ul>
         </div>
     );

@@ -4,11 +4,12 @@ export default function FloatingCallButton() {
     return (
         <a
             href="tel:+31619905283"
+            className="pulse-call"
             style={{
                 position: "fixed",
                 bottom: "20px",
                 right: "20px",
-                background: "#24612c",
+                background: "#088317",
                 color: "white",
                 padding: "14px 20px",
                 borderRadius: "50px",

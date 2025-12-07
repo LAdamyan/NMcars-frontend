@@ -1,14 +1,16 @@
 import React from "react";
-import "./ServiceList.css"; // optional for custom styling
+import "./ServiceList.css";
+import { useTranslation } from 'react-i18next';// optional for custom styling
 
 export default function ServiceList() {
+    const { t } = useTranslation();
     const services = [
-        "Kleine onderhoudsbeurt",
-        "Grote onderhoudsbeurt",
-        "Motor reparatie",
-        "Elektrische werkzaamheden",
-        "Distributierem vervangen ongeveer",
-        "Distributieketting vervangen"
+        t('serviceSmallMaintenance'),
+        t('serviceLargeMaintenance'),
+        t('serviceEngineRepair'),
+        t('serviceElectrical'),
+        t('serviceTimingBelt'),
+        t('serviceTimingChain')
     ];
 
     return (
