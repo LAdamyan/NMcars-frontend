@@ -1,4 +1,5 @@
 import React from "react";
+import bellImage from "../assets/call.png";
 
 export default function FloatingCallButton() {
     return (
@@ -7,19 +8,23 @@ export default function FloatingCallButton() {
             className="pulse-call"
             style={{
                 position: "fixed",
-                bottom: "20px",
+                bottom: "10px",
                 right: "20px",
-                background: "#088317",
-                color: "white",
-                padding: "14px 20px",
+                background: "#018e98",
+                padding: "10px",
                 borderRadius: "50px",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
-                fontWeight: "bold",
-                textDecoration: "none",
-                zIndex: 9999
+                zIndex: 9999,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
             }}
         >
-            📞 Bel
+            <img
+                src={bellImage}
+                alt="Call"
+                style={{ width: "40px", height: "40px", objectFit: "cover" }}
+            />
         </a>
     );
 }
