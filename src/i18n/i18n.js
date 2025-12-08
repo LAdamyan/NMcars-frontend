@@ -13,7 +13,7 @@ const resources = {
             ourWorks: "Our Works",
             location: "Location",
             workingHours: "Working Hours",
-            hoursWeekdays: "Monday - Friday: 08:00 - 18:00",
+            hoursWeekdays: "Monday - Friday: 09:00 - 18:00",
             hoursSaturday: "Saturday: 09:00 - 13:00",
             hoursSunday: "Sunday: Closed",
             serviceSmallMaintenance: "Small Maintenance",
@@ -37,7 +37,7 @@ const resources = {
             ourWorks: "Onze werken",
             location: "Locatie",
             workingHours: "Werkuren",
-            hoursWeekdays: "Maandag - Vrijdag: 08:00 - 18:00",
+            hoursWeekdays: "Maandag - Vrijdag: 09:00 - 18:00",
             hoursSaturday: "Zaterdag: 09:00 - 13:00",
             hoursSunday: "Zondag: Gesloten",
             serviceSmallMaintenance: "Kleine onderhoudsbeurt",
@@ -56,8 +56,8 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: 'en', // default language
-        fallbackLng: 'en',
+        lng: 'nl', // default language
+        fallbackLng: 'nl',
         interpolation: { escapeValue: false }
     });
 
