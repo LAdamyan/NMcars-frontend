@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NM Cars</title>
+
+    <!-- SEO Title -->
+    <title>NM Cars Boxtel – Autoservice, Onderhoud & Reparatie</title>
+
+    <!-- Description for Google -->
+    <meta name="description" content="NM Cars in Boxtel biedt auto onderhoud, reparatie, diagnose en distributieriem vervanging. Autoservice voor Boxtel, Liempde, Esch en omgeving.">
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="autoservice Boxtel, garage Boxtel, auto reparatie Boxtel, onderhoud auto Boxtel, autogarage Boxtel, distributieriem vervangen Boxtel">
+
+    <!-- Robots: allow Google indexing -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook / Instagram preview) -->
+    <meta property="og:title" content="NM Cars Boxtel – Autoservice & Reparatie">
+    <meta property="og:description" content="Professioneel auto onderhoud, reparatie, diagnose en distributieriem service in Boxtel.">
+    <meta property="og:url" content="https://nmcars.net">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/src/assets/logo2.png">
+
+    <!-- JSON-LD: Structured data for Google SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AutoRepair",
+            "name": "NM Cars",
+            "image": "https://nmcars.net/logo.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Industrieweg 4",
+                "addressLocality": "Boxtel",
+                "postalCode": "5281 RW",
+                "addressCountry": "NL"
+            },
+            "telephone": "+31619905283",
+            "url": "https://nmcars.net",
+            "openingHours": [
+                "Mo-Fr 08:00-18:00",
+                "Sa 09:00-13:00"
+            ],
+            "servesLocation": [
+                "Boxtel", "Liempde", "Esch", "Schijndel", "Sint-Michielsgestel", "Oisterwijk"
+            ],
+            "priceRange": "$$",
+            "description": "Autoservice en autogarage in Boxtel gespecialiseerd in onderhoud, reparatie en elektrische diagnose."
+        }
+    </script>
+
+    <!-- CSS File -->
     <link rel="stylesheet" href="/src/App.css" />
 </head>
-<header>
-    <!-- You can add nav or text here -->
-</header>
+
 <body>
+<header>
+    <!-- Navigation or header can go here -->
+</header>
+
 <div id="root"></div>
+
 <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
-
