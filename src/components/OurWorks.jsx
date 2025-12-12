@@ -1,5 +1,5 @@
 import React from "react";
-import cars from '../assets/cars.jpg';
+import cars from '../assets/cars.webp';
 import { useTranslation } from 'react-i18next';
 export default function OurWorks() {
     const { t } = useTranslation();
