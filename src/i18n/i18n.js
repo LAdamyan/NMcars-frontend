@@ -10,7 +10,6 @@ const resources = {
             phone: "Phone",
             rights: "All rights reserved",
             services: "Our Services",
-            ourWorks: "Our Works",
             location: "Location",
             workingHours: "Working Hours",
             hoursWeekdays: "Monday - Friday: 09:00 - 18:00",
@@ -22,7 +21,24 @@ const resources = {
             serviceElectrical: "Electrical Work",
             serviceTimingBelt: "Timing Belt Replacement ",
             serviceTimingChain: "Timing Chain Replacement",
-            garageText: "Take a look at our garage and see recent work on our vehicles!"
+            garageText: "Take a look at our garage and see recent work on our vehicles!",
+            polishTitle: "Polishing – Before & After",
+            ourWorks: "Our Works",
+            polish: "Polishing",
+            repair: "Repair",
+            engine: "Engine",
+            polishText: "Professional car polishing – see the before and after difference.",
+            repairText: "After a thorough diagnosis, we located and addressed the problem in the electrical system. Thanks to the correct analysis and repair, the car starts perfectly again.",
+            engineText: "Engine maintenance and technical work.",
+            polishWork1Title: "Complete Car Polish",
+            polishWork1Desc: "Full exterior polishing and scratch removal",
+            repairWork1Title: "Electrical Repair",
+            repairWork1Desc: "Fixed electrical system - restored perfect starting",
+            engineWork1Title: "Engine Service",
+            engineWork1Desc: "Complete engine maintenance and tuning",
+            mediaComingSoon: "📸 Media will be added soon",
+            checkBackLater: "Check back later for more examples!",
+            engineExamplesComing: "Check back later for engine work examples!"
 
         }
     },
@@ -34,7 +50,6 @@ const resources = {
             phone: "Telefoon",
             rights: "Alle rechten voorbehouden",
             services: "Onze diensten",
-            ourWorks: "Onze werken",
             location: "Locatie",
             workingHours: "Werkuren",
             hoursWeekdays: "Maandag - Vrijdag: 09:00 - 18:00",
@@ -47,6 +62,24 @@ const resources = {
             serviceTimingBelt: "Distributierem vervangen ",
             serviceTimingChain: "Distributieketting vervangen",
             garageText: "Neem een kijkje in onze garage en bekijk het recente werk aan onze voertuigen!",
+            polishTitle: "Polijsten – Voor en Na",
+            ourWorks: "Onze Werken",
+            polish: "Polijsten",
+            repair: "Reparatie",
+            engine: "Motor",
+            polishText: "Professioneel polijsten van voertuigen – bekijk het verschil voor en na.",
+            repairText: "Na een grondige diagnose hebben we het probleem in het elektrische systeem opgespoord en aangepakt. Dankzij de juiste analyse en reparatie start de auto weer perfect ",
+            engineText: "Motoronderhoud en technische werkzaamheden.",
+            polishWork1Title: "Polish Auto Complet",
+            polishWork1Desc: "Volledig polijsten van de buitenkant en verwijdering van krassen",
+            repairWork1Title: "Elektrotechnische reparatie",
+            repairWork1Desc: "Elektrisch systeem gerepareerd - start weer perfect",
+            engineWork1Title: "Service Motor",
+            engineWork1Desc: "Volledig motoronderhoud en afstelling",
+            mediaComingSoon: "📸 Media wordt binnenkort toegevoegd",
+            checkBackLater: "Kom later terug voor meer voorbeelden!",
+            engineExamplesComing: "Kom later terug voor motorwerk voorbeelden!"
+
 
         }
     }
