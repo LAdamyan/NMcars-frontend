@@ -38,7 +38,12 @@ const resources = {
             engineWork1Desc: "Complete engine maintenance and tuning",
             mediaComingSoon: "📸 Media will be added soon",
             checkBackLater: "Check back later for more examples!",
-            engineExamplesComing: "Check back later for engine work examples!"
+            engineExamplesComing: "Check back later for engine work examples!",
+            engineCaseTitle: "Renault Clio – Excessive Oil Consumption",
+            engineCaseText: "This Renault Clio was brought in due to excessive oil consumption. After inspection, worn piston rings were identified. After replacement, the engine runs smoothly again.",
+            engineProblemOil: "⚠️ Excessive oil consumption",
+            engineProblemSmoke: "⚠️ Blue smoke from exhaust",
+            engineProblemPower: "⚠️ Loss of engine power"
 
         }
     },
@@ -78,7 +83,12 @@ const resources = {
             engineWork1Desc: "Volledig motoronderhoud en afstelling",
             mediaComingSoon: "📸 Media wordt binnenkort toegevoegd",
             checkBackLater: "Kom later terug voor meer voorbeelden!",
-            engineExamplesComing: "Kom later terug voor motorwerk voorbeelden!"
+            engineExamplesComing: "Kom later terug voor motorwerk voorbeelden!",
+            engineCaseTitle: "Renault Clio – Hoog olieverbruik",
+            engineCaseText: "Deze Renault Clio kwam bij ons binnen met extreem hoog olieverbruik. Na inspectie bleek dat de zuigerveren versleten waren. Na vervanging loopt de motor weer gezond.",
+            engineProblemOil: "⚠️ Hoog olieverbruik",
+            engineProblemSmoke: "⚠️ Blauwe rook uit de uitlaat",
+            engineProblemPower: "⚠️ Vermogensverlies"
 
 
         }

@@ -19,11 +19,24 @@ import work1after from "../assets/works/video/work1after.mp4";
 // import work2after from "../assets/works/video/work2after.mp4";
 
 import "./OurWorks.css";
+import EngineStepVideo from "./EngineStepVideo";
+
+import engineBefore from "../assets/works/video/engine/engine_before.mp4";
+import engineExplain from "../assets/works/video/engine/engine_explain.mp4";
+import engineRepair from "../assets/works/video/engine/engine_repair.mp4";
+import engineAfter from "../assets/works/video/engine/engine_after.mp4";
 
 export default function OurWorks() {
     const { t } = useTranslation();
     const [category, setCategory] = useState("polish");
     const [currentWorkIndex, setCurrentWorkIndex] = useState(0);
+
+    const engineSteps = [
+        { label: t("before"), video: engineBefore },
+        { label: t("explanation"), video: engineExplain },
+        { label: t("repair"), video: engineRepair },
+        { label: t("after"), video: engineAfter },
+    ];
 
     // Define all your works data
     const worksData = {
@@ -74,13 +87,11 @@ export default function OurWorks() {
             items: [
                 {
                     id: 1,
-                    before: "",
-                    after: "",
-                    title: t("engineWork1Title", "Engine Maintenance"),
-                    description: t("engineWork1Desc", "Complete engine service and tuning")
-                },
+                    title: t("engineCaseTitle"),
+                    description: t("engineCaseText")
+                }
             ],
-            type: "placeholder"
+            type: "engine"
         }
     };
 
@@ -157,11 +168,15 @@ export default function OurWorks() {
                         />
                     )}
 
-                    {(category === "engine" || currentCategory.type === "placeholder") && (
-                        <div className="placeholder-media">
-                            <p>{t("mediaComingSoon")}</p>
-                            <small>{t("engineExamplesComing")}</small>
-                        </div>
+                    {category === "engine" && (
+                        <>
+                            <div className="video-compare engine-compare">
+                                <video src={engineBefore} controls muted />
+                                <video src={engineExplain} controls muted />
+                                <video src={engineRepair} controls muted />
+                                <video src={engineAfter} controls muted />
+                            </div>
+                        </>
                     )}
                 </div>
 
