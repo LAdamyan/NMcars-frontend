@@ -11,7 +11,7 @@ export default function FloatingCallButton() {
                 bottom: "10px",
                 right: "20px",
                 background: "#018e98",
-                padding: "10px",
+                padding: "5px",
                 borderRadius: "50px",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
                 zIndex: 9999,

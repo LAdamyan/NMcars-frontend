@@ -9,6 +9,7 @@ import FloatingCallButton from "./components/FloatingCallButton";
 import WhatsAppButton from "./components/WhatsAppButton";
 import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher';
 import './i18n/i18n';
+import SocialButtons from "./components/SocialButtons";
 
 export default function App() {
     const { t } = useTranslation();
@@ -43,6 +44,7 @@ export default function App() {
                     <WorkingHours />
                 </section>
             </main>
+            <SocialButtons />
 
             <Footer />
             <FloatingCallButton />
